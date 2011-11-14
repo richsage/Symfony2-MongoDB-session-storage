@@ -11,6 +11,7 @@ it all into a bundle and test it accordingly ;-)
 
     namespace My\Bundle\Session;
 
+
 2. Add the class as a service in config.yml:
 
     services:
@@ -21,6 +22,7 @@ it all into a bundle and test it accordingly ;-)
                 con: "%however.you.get.mongo%"
                 options: "%mongo.session.options%"
 
+
 3. Add session options into your parameters (maybe in config.yml or parameters.yml):
 
     parameters:
@@ -28,6 +30,7 @@ it all into a bundle and test it accordingly ;-)
         mongo.session.options:
             db_name: myMongoDBName
             collection: session
+
 
 4. Configure the session to use your new service, in config.yml:
 
